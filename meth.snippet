@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>met</Title>
+			<Shortcut>met</Shortcut>
+			<Description>Snippet de código para um metodo implementado automaticamente</Description>
+			<Author>Danilo Silva</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>methodAccessibility</ID>
+					<ToolTip>Tipo de privacidade do metodo</ToolTip>
+					<Default>public</Default>
+				</Literal>
+				<Literal>
+					<ID>returnType</ID>
+					<ToolTip>Tipo de retorno do metodo</ToolTip>
+					<Default>Object</Default>
+				</Literal>
+				<Literal>
+					<ID>methodName</ID>
+					<ToolTip>Nome do metodo</ToolTip>
+					<Default>MyMethod</Default>
+				</Literal>
+				<Literal>
+					<ID>paramType</ID>
+					<ToolTip>Tipo do parametro do metodo</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>paramName</ID>
+					<ToolTip>Nome do parametro do metodo</ToolTip>
+					<Default>parameter</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[$methodAccessibility$ $returnType$ $methodName$($paramType$ $paramName$) 
+			{ 
+				return new $returnType$();
+			}$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
